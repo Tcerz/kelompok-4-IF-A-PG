@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MHD Hatami - Web Developer & Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E2A47;
+      --secondary: #F4F4F4;
+      --accent: #4CAF50;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #1A263A;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      background-color: white;
+    }
+
+    .hero img {
+      width: 25%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: #e9f0fb;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-box h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nama Programmer</h1>
+  <p>Web Developer & Software Engineer</p>
+</header>
+
+<nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#keahlian">Keahlian</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section class="hero">
+  <img src="HatamiBg.jpeg" alt="Foto Profil Programmer">
+  <h2>Menjadi Solusi Teknologi untuk Dunia Digital</h2>
+  <p>Memiliki pengalaman dalam pengembangan aplikasi web, aplikasi mobile, dan solusi software yang dapat membantu bisnis berkembang.</p>
+</section>
+
+<div class="content">
+  <section class="section" id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Hai, saya [Nama Anda], seorang pengembang perangkat lunak dengan pengalaman lebih dari 5 tahun di industri teknologi. Saya berfokus pada pengembangan aplikasi web dan mobile dengan menggunakan berbagai framework dan teknologi terkini.</p>
+    <p>Saya bersemangat untuk menciptakan solusi yang inovatif dan efisien untuk tantangan digital yang dihadapi banyak perusahaan.</p>
+  </section>
+
+  <section class="section" id="keahlian">
+    <h2>Keahlian Saya</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Web Development</h3>
+        <p>Mengembangkan website responsif dan performa tinggi menggunakan HTML, CSS, JavaScript, React, dan Node.js.</p>
+      </div>
+      <div class="service-box">
+        <h3>Mobile App Development</h3>
+        <p>Pengembangan aplikasi mobile untuk Android dan iOS dengan Flutter dan React Native.</p>
+      </div>
+      <div class="service-box">
+        <h3>Database & Backend</h3>
+        <p>Desain dan pengelolaan database menggunakan MySQL, MongoDB, serta pengembangan backend dengan Express.js.</p>
+      </div>
+      <div class="service-box">
+        <h3>Software Engineering</h3>
+        <p>Pengembangan perangkat lunak menggunakan prinsip rekayasa perangkat lunak dan best practices dalam pengembangan sistem besar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
+    <ul>
+      <li><a href="https://github.com/username/project1">Proyek 1: Website E-Commerce</a></li>
+      <li><a href="https://github.com/username/project2">Proyek 2: Aplikasi Mobile Chat</a></li>
+      <li><a href="https://github.com/username/project3">Proyek 3: Sistem Manajemen Inventaris</a></li>
+    </ul>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2>Kontak Saya</h2>
+    <p><strong>Email:</strong> email@domain.com</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/username">linkedin.com/in/username</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/username">github.com/username</a></p>
+  </section>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2025 Nama Programmer</p>
+  <div>
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
